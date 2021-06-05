@@ -18,7 +18,7 @@ challenge_checklist = {
     17: True,
     18: True,
     19: False,
-    20: False,
+    20: True,
     21: 'not_started',
     22: 'not_started',
     23: 'not_started',
