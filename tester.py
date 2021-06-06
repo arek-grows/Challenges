@@ -4,6 +4,6 @@ groceries = [{"product": "Milk", "quantity": 1, "price": 1.50},
     {"product": "Cheese", "quantity": 1, "price": 4.50}]
 
 
-number = 0.1 + 0.2
-number = round(number, 2)
-print(number)
+combos = []
+combos.append([])
+print(combos)

@@ -22,13 +22,27 @@
 from typing import List
 
 
-def combo(lst: List[int]) -> List[List[int]]:
-    # Put your code here!
+def combo(lst: List, size) -> List[List[int]]:
+    combos = []
+    if len(lst) < size:
+        pass
+    elif size == 0:
+        combos.append([])
+    else:
+        for i in range(0, len(lst) - size + 1):
+            current_combo = []
+            for x in range(0, size):
+                current_combo.append(lst[i])
+            combos.append(current_combo)
+    return combos  # Put your code here!
 
 
-assert combo([1, 2, 3, 4], 2) == [[1, 2], [1, 3], [1, 4], [2, 3], [2, 4], [3, 4]]
-assert combo([1, 2, 3, 4], 3) == [[1, 2, 3], [1, 2, 4], [1, 3, 4], [2, 3, 4]]
-assert combo([1, 2, 3, 4], 1) == [[1], [2], [3], [4]]
+assert combo([1, 2, 3, 4], 2) == [[1, 2], [1, 3], [1, 4], [2, 3], [2, 4], [3, 4]]  #  4 - 2 = 2 = the last index to work on
+# +1. +2. +3. next +1. +2. next +1
+assert combo([1, 2, 3, 4], 3) == [[1, 2, 3], [1, 2, 4], [1, 3, 4], [2, 3, 4]]  #  len() - size = 1 (index)
+# +1, +2. +1, +3. +2, +3. next for +1, +2.
+assert combo([1, 2, 3, 4], 1) == [[1], [2], [3], [4]]  #  4 - 1 = 3 (index
+
 assert combo([1, 2, 3, 4], 5) == []
 assert combo([1, 2, 3, 4], 0) == [[]]
 assert combo(['a', 'b', 'c'], 0) == [[]]
