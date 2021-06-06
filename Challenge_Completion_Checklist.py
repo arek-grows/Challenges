@@ -259,6 +259,6 @@ challenge_checklist = {
     258: "not_started",
     259: "not_started",
     260: "not_started",
-    261: "not_started",
+    261: True,
     262: True
 }
