@@ -22,8 +22,9 @@ from __future__ import annotations
 import unittest
 
 
-def measure_depth(lists: list[list], times) -> int:
-    return 0  # Put your code here!!!`
+def measure_depth(lists) -> int:
+    lists = str(lists)
+    return lists.count('[')  # Put your code here!!!`
 
 
 class Tests(unittest.TestCase):
