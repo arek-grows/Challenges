@@ -231,15 +231,15 @@ challenge_checklist = {
     230: "not_started",
     231: "not_started",
     232: "not_started",
-    233: "not_started",
-    234: "not_started",
-    235: "not_started",
-    236: "not_started",
-    237: "not_started",
-    238: "not_started",
-    239: "not_started",
-    240: "not_started",
-    241: "not_started",
+    233: False,
+    234: True,
+    235: True,
+    236: True,
+    237: False,
+    238: True,
+    239: True,
+    240: True,
+    241: True,
     242: "not_started",
     243: True,
     244: True,
@@ -260,5 +260,7 @@ challenge_checklist = {
     259: True,
     260: True,
     261: True,
-    262: True
+    262: True,
+
+    274: True
 }
