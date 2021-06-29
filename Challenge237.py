@@ -9,7 +9,12 @@ def guess_score(masterminds_code: str, guess: str) -> dict[str, int]:
         if (num in masterminds_code) and (masterminds_code[x] == num):
             pegs["black"] += 1
             masterminds_code[x] = 'a'
-    return {}  # Put your code here!!!
+    for num in guess:
+        if num in masterminds_code:
+            print(num)
+            pegs["white"] += 1
+            masterminds_code[masterminds_code.index(num)] = 'a'
+    return pegs  # Put your code here!!!
 
 
 class Tests(unittest.TestCase):

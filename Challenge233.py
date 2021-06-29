@@ -3,14 +3,16 @@ import unittest
 
 
 def move_zeros(lst: list) -> list:
-    zeroes = lst.count(0)
-    end_list = []
-    for x in lst:
-        if str(x) != '0':
-            end_list.append(x)
-    for x in range(zeroes):
-        end_list.append(0)
-    return end_list  # Put your code here!!!
+    zero_indexes = []
+    for x, i in enumerate(lst):
+        if (type(i) is int or type(i) is float) and i == 0:
+            zero_indexes.append(x)
+    lst += [0] * len(zero_indexes)
+    remover = 0
+    for z in zero_indexes:
+        lst.pop(z-remover)
+        remover += 1
+    return lst  # Put your code here!!!
 
 
 class Tests(unittest.TestCase):
