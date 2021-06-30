@@ -24,9 +24,9 @@ def create_and_print_list(checklist):
 create_and_print_list(challenge_checklist)
 opened = True
 while opened:
-    link = input("which challenge would you like to read about? 176-224 ")
-    if link.isdigit() is False or int(link) not in challenge_links.keys():
+    link = input("which challenge would you like to read about? 176+ only")
+    if link.isdigit() is False:  # or int(link) not in challenge_links.keys():
         opened = False
         print('exiting')
         break
-    webbrowser.open(challenge_links[int(link)])
+    webbrowser.open('https://github.com/beginnerpy-com/challenges/blob/main/weekday/challenge_' + str(link) + '.md')
