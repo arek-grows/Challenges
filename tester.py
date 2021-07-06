@@ -1,1 +1,2 @@
-print(-1%4)
+lst2 = 'abc'
+print(lst2[:2])
