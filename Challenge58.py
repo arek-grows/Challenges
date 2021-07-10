@@ -3,8 +3,17 @@ import re
 
 
 def transform(word: str) -> str:
-
-    return ""  # Put your code here!!!
+    end_string = ''
+    a2m = '[a-mA-M]'
+    n2z = '[n-zN-Z]'
+    for c in word:
+        if re.match(a2m, c):
+            end_string += '0'
+        elif re.match(n2z, c):
+            end_string += '1'
+        else:
+            return 'error'
+    return end_string  # Put your code here!!!
 
 
 class TestTransform(unittest.TestCase):

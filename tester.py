@@ -1,2 +1,1 @@
-lst2 = 'abc'
-print(lst2[:2])
+print(0//0)
