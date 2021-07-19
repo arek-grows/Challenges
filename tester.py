@@ -1,2 +1,5 @@
-yo = {1: 'a', 2: 'a'}
-print(yo[0])
+upper = 'ABCD'
+not_upper = 'AbCD'
+
+print(upper.isupper())
+print(not_upper.isupper())
