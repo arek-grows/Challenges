@@ -1,5 +1,4 @@
-upper = 'ABCD'
-not_upper = 'AbCD'
+import math
+upper = -0.25
 
-print(upper.isupper())
-print(not_upper.isupper())
+print(math.floor(upper))
