@@ -1,4 +1,4 @@
-import math
-upper = -0.25
+num = int()
 
-print(math.floor(upper))
+if num > 8:
+    print('true')
