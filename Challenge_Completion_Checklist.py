@@ -287,13 +287,14 @@ challenge_checklist = {
     286: False,
     287: True,
     288: True,
-    289: "not_started",
-    290: "not_started",
-    291: "not_started",
-    292: "not_started",
-    293: "not_started",
-    294: "not_started",
-    295: "not_started",
-    296: "not_started",
-    297: "not_started"
+    289: True,
+    290: True,
+    291: True,
+    292: True,
+    293: True,
+    294: True,
+    295: True,
+    296: True,
+    297: True,
+    298: False
 }
