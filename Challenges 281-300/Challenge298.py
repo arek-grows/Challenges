@@ -4,11 +4,15 @@ import unittest
 class Name:
     def __init__(self, first: str, last: str):
         """Put your code here!!!"""
-        
+        self.fname = first.capitalize()
+        self.lname = last.capitalize()
+        self.fullname = self.fname + " " + self.lname
+        self.initials = self.fname[0] + "." + self.lname[0]
 
 
 class Tests(unittest.TestCase):
-    def __init__(self):
+    def setUp(self):
+        # super().__init__()
         self.a1 = Name("john", "SMITH")
         self.a2 = Name("sARah", "fRolliE")
 
