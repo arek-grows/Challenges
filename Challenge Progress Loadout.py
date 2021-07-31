@@ -8,7 +8,7 @@ def create_and_print_list(checklist):
     uncompleted = []
     not_started = []
     for ch_number in checklist:
-        if checklist[ch_number] == True:
+        if checklist[ch_number] == True or type(checklist[ch_number]) is int:
             completed.append(ch_number)
         elif checklist[ch_number] == 'not_started':
             not_started.append(ch_number)

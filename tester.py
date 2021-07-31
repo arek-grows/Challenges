@@ -1,3 +1,6 @@
-lister = "JOHN"
+diction = {"Frank": {"Coffee": 100}}
 
-print(lister.capitalize())
+for d in diction:
+    print(d)
+    for b in diction[d]:
+        print(diction[d][b])
