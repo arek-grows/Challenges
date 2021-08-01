@@ -1,6 +1,3 @@
-diction = {"Frank": {"Coffee": 100}}
+diction = [0, 1 , 2, 3]
 
-for d in diction:
-    print(d)
-    for b in diction[d]:
-        print(diction[d][b])
+print(1_000)
