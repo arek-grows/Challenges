@@ -4,7 +4,6 @@ import unittest
 def valid_password(password: str) -> bool:
     if len(password) < 6:
         return False
-    numbers = [str(x) for x in range(10)]
     contains_upper = False
     contains_lower = False
     contains_number = False
@@ -13,12 +12,12 @@ def valid_password(password: str) -> bool:
             contains_upper = True
         elif char.islower():
             contains_lower = True
-        elif char in numbers:
+        elif char.isdigit():
             contains_number = True
         else:
             return False
-        if contains_upper and contains_lower and contains_number:
-            return True
+    if contains_upper and contains_lower and contains_number:
+        return True
     return False  # Put your code here!!!
 
 

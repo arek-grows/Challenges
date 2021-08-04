@@ -83,7 +83,7 @@ challenge_checklist = {
     82: True,
     83: False,
     84: True,
-    85: False,
+    85: True,
     86: True,
     87: True,
     88: 61,

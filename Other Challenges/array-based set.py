@@ -13,11 +13,9 @@ class ABset:
         return self.array_set[index]
 
     def search(self, item):
-        i = 0
-        for x in self.array_set:
+        for i, x in enumerate(self.array_set):
             if x == item:
                 return i
-            i += 1
         return False
 
     def insert(self, item, index):

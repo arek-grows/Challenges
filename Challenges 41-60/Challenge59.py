@@ -3,14 +3,14 @@ from typing import List
 
 
 def check_flush(table: List[str], hand: List[str]) -> bool:
-    suits = ['S', 'H', 'D', 'C']
-    suit_count = [0, 0, 0, 0]
+    suit_count = {'S': 0, 'H': 0, 'D': 0, 'C': 0}
     for t in table:
-        suit_count[suits.index(t[-1])] += 1
+        suit_count[t[-1]] += 1
     for h in hand:
-        suit_count[suits.index(h[-1])] += 1
-    for counts in suit_count:
-        if counts >= 5:
+        suit_count[h[-1]] += 1
+    for suit, count in suit_count.items():
+        if count >= 5:
+            print(suit)
             return True
     return False  # Put your code here!!!
 
