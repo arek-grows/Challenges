@@ -305,5 +305,9 @@ challenge_checklist = {
     304: True,
     305: True,
     306: 166,
-    307: True
+    307: True,
+    308: True,
+    309: 228,
+    310: False,
+    311: True
 }
