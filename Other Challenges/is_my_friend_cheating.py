@@ -1,3 +1,5 @@
+# https://www.codewars.com/kata/5547cc7dcad755e480000004/train/python
+# TODO: unfinished
 import time
 from math import sqrt
 
@@ -27,7 +29,7 @@ def remov_nb(n):
 
 if __name__ == '__main__':
     tens = [10**xx for xx in range(1, 20)]
-    for ii in [26]:
+    for ii in [10]:
         start = time.time()
         print(remov_nb(ii))
         print(f"{ii}: {time.time() - start} seconds")
