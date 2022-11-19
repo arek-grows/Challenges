@@ -1,7 +1,7 @@
-a = [1, 2, 3]
+class Animal:
+    x = 4
 
-b = [4, 5, 6]
 
-c = a + b
+yo = Animal()
+print(yo.x)
 
-print(len(c))
