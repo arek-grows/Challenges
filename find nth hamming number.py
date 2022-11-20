@@ -61,6 +61,7 @@ def hamming(n):
             # print(f"False.")
             current_num += 1
 
+
 if __name__ == "__main__":
     counter = 0
     for xx in range(1, 33):
