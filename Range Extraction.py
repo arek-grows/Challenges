@@ -12,6 +12,7 @@ def solution(args):
         end_list.append(str(args[0]))
 
     for num in args[1:]:
+
         if previous_num + 1 == num:
             range_list.append(num)
         elif len(range_list) > 2:
@@ -19,14 +20,20 @@ def solution(args):
             range_list.clear()
             range_list.append(num)
         elif len(range_list) <= 2:
+
             for nn in range_list:
                 end_list.append(str(nn))
+
             range_list.clear()
             range_list.append(num)
+
         previous_num = num
+
     if len(range_list) <= 2:
+
         for nn in range_list:
             end_list.append(str(nn))
+
     elif len(range_list) > 2:
         end_list.append(f"{range_list[0]}-{range_list[-1]}")
 
